@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zelf.com — a premium four-letter .com for digital identity, fintech, banking, crypto, AI and Web3." />
+  <title>Zelf.com — Your Digital Self Starts Here</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Automatic device routing.
+    // query ?desktop=1 prevents a mobile user from being redirected again.
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("desktop") === "1") return;
+
+      const mobileUA = /Android|iPhone|iPod|Mobile|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      const narrowScreen = window.matchMedia("(max-width: 767px)").matches;
+
+      if (mobileUA || narrowScreen) {
+        window.location.replace("mobile.html");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#top">Zelf<span>.com</span></a>
+      <nav class="nav-links">
+        <a href="#why">Why Zelf</a>
+        <a href="#use-cases">Use Cases</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="button small" href="#contact">Make an Offer →</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">A PREMIUM DOMAIN FOR A BIGGER TOMORROW</div>
+          <h1>Own <span>Zelf.com</span></h1>
+          <h2>Your digital self starts here.</h2>
+          <p class="lead"><strong>Self is who you are. Zelf is who you are in the digital world.</strong></p>
+          <p>A rare four-letter .com built for digital identity, fintech, banking, payments, crypto, AI, Web3 and the next generation of digital products.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Make an Offer →</a>
+            <a class="button ghost" href="mailto:adam@zelf.com">✉ Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="globe">
+            <div class="glow"></div>
+            <div class="orbit one"></div>
+            <div class="orbit two"></div>
+            <div class="city-dots"></div>
+          </div>
+          <div class="hero-note top">PEOPLE<br>IDEAS<br>ASSETS<br>A MORE OPEN<br>TOMORROW</div>
+          <div class="hero-note bottom">A MORE<br>CONNECTED<br>HUMAN FUTURE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section" id="why">
+      <div class="container evolution">
+        <div>
+          <h3>The Evolution of <span>Self</span></h3>
+          <p class="section-sub">From physical identity to digital identity.</p>
+          <div class="self-cards">
+            <div class="self-card"><strong>Self</strong><p>Who you are<br>in the real world</p></div>
+            <div class="arrow">→</div>
+            <div class="self-card active"><strong>Zelf</strong><p>Who you are<br>in the digital world</p></div>
+          </div>
+        </div>
+        <div class="evolution-copy">
+          <p>As our lives move online, the digital self is becoming the center of a new economy. Zelf.com is a short, distinctive and future-ready name for the next era.</p>
+          <div class="icon-row">
+            <div><span>◎</span><b>Identity</b></div>
+            <div><span>▣</span><b>Wallet</b></div>
+            <div><span>◉</span><b>Money</b></div>
+            <div><span>◇</span><b>Assets</b></div>
+            <div><span>▤</span><b>Data</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="use-cases">
+      <div class="container split">
+        <div>
+          <h3>Built for <span>What’s Next</span></h3>
+          <p class="section-sub light">A powerful, flexible name for multiple high-growth industries.</p>
+          <div class="use-grid">
+            <article class="use-card"><div class="card-icon">◉</div><h4>Digital Identity</h4><p>Identity, authentication and personal data.</p></article>
+            <article class="use-card"><div class="card-icon">◇</div><h4>Crypto & Web3</h4><p>Wallets, exchanges, DeFi and digital assets.</p></article>
+            <article class="use-card"><div class="card-icon">▣</div><h4>Banking & Payments</h4><p>Modern banking, payments and financial infrastructure.</p></article>
+            <article class="use-card"><div class="card-icon">✦</div><h4>AI & Personal Assistant</h4><p>Your AI, your data, your digital self.</p></article>
+            <article class="use-card"><div class="card-icon">◎</div><h4>Consumer & Lifestyle</h4><p>A global brand for everyday digital life.</p></article>
+            <article class="use-card"><div class="card-icon">∞</div><h4>And Beyond</h4><p>A timeless name for opportunities we haven’t even imagined yet.</p></article>
+          </div>
+        </div>
+
+        <aside class="offer-panel" id="contact">
+          <div class="offer-kicker">PRIVATE ACQUISITION</div>
+          <h3>Make an <span>Offer</span></h3>
+          <p>Serious inquiries are welcome. Please fill out the form below and we’ll get back to you shortly.</p>
+          <form class="inquiry-form" action="https://formspree.io/f/xoevdrbw" method="POST">
+            <input type="text" name="name" placeholder="Your Name *" required>
+            <input type="email" name="email" placeholder="Your Email *" required>
+            <input type="text" name="company" placeholder="Company (Optional)">
+            <input type="text" name="offer" placeholder="Your Offer (USD, Optional)">
+            <textarea name="message" rows="5" placeholder="Message (Optional)"></textarea>
+            <input type="hidden" name="_subject" value="New Zelf.com Acquisition Inquiry">
+            <button type="submit" class="button full">Send Inquiry →</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="secure-note">🔒 Your information is kept confidential. We will reply by email.</p>
+          <p class="direct-email">Prefer email? <a href="mailto:adam@zelf.com">adam@zelf.com</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="container">
+        <h3>Why <span>Zelf.com?</span></h3>
+        <p class="section-sub">Short. Memorable. Global. Full of possibilities.</p>
+        <div class="why-grid">
+          <article><div class="why-icon">◇</div><h4>Premium 4-letter .com</h4><p>Extremely rare and highly valuable.</p></article>
+          <article><div class="why-icon">◎</div><h4>Global Appeal</h4><p>Easy to pronounce, easy to remember, works worldwide.</p></article>
+          <article><div class="why-icon">✦</div><h4>Versatile Brand</h4><p>Fits multiple industries and future innovations.</p></article>
+          <article><div class="why-icon">▥</div><h4>Long-Term Value</h4><p>Premium .com domains are scarce digital assets.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section process-section" id="process">
+      <div class="container">
+        <h3>A Simple, <span>Secure</span> Acquisition Process</h3>
+        <p class="section-sub light">Safe for both buyer and seller. Typically handled via Escrow.com.</p>
+        <div class="process-grid">
+          <article class="process-step"><div class="number">1</div><div><h4>Make an Offer</h4><p>Submit your inquiry using the form above.</p></div></article>
+          <article class="process-step"><div class="number">2</div><div><h4>Discuss Terms</h4><p>We’ll get back to you promptly to discuss details.</p></div></article>
+          <article class="process-step"><div class="number">3</div><div><h4>Close via Escrow</h4><p>The transaction can be handled securely through Escrow.com.</p></div></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div><div class="logo footer-logo">Zelf<span>.com</span></div><p>A domain for a more open tomorrow.</p></div>
+      <div class="footer-links"><a href="#why">Why Zelf</a><a href="#use-cases">Use Cases</a><a href="#process">Process</a><a href="#contact">Contact</a></div>
+      <div class="copyright">© 2026 Zelf.com<br>All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.inquiry-form').forEach((form) => {
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const button = form.querySelector('button[type="submit"]');
+        const status = form.querySelector('.form-status');
+        const originalText = button.textContent;
+        button.disabled = true;
+        button.textContent = 'Sending…';
+        status.textContent = '';
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            window.location.href = 'success.html';
+            return;
+          }
+          status.textContent = 'We could not send your inquiry. Please try again or email adam@zelf.com.';
+        } catch (error) {
+          status.textContent = 'Connection error. Please try again or email adam@zelf.com.';
+        } finally {
+          button.disabled = false;
+          button.textContent = originalText;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

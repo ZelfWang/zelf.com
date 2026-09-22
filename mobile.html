@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Zelf.com — Your digital self starts here." />
+  <title>Zelf.com — Mobile</title>
+  <link rel="stylesheet" href="mobile.css" />
+  <script>
+    // If opened on a wide desktop, return to desktop version.
+    // query ?mobile=1 prevents the redirect.
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("mobile") === "1") return;
+      if (window.matchMedia("(min-width: 900px)").matches) {
+        window.location.replace("index.html?desktop=1");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="mobile-header">
+    <a class="logo" href="#top">Zelf<span>.com</span></a>
+    <a class="top-offer" href="#contact">Offer</a>
+  </header>
+
+  <main id="top">
+    <section class="m-hero">
+      <div class="tag">PREMIUM DOMAIN FOR ACQUISITION</div>
+      <h1>Own<br><span>Zelf.com</span></h1>
+      <h2>Your digital self starts here.</h2>
+      <p class="lead"><strong>Self is who you are.<br>Zelf is who you are in the digital world.</strong></p>
+      <p>A rare four-letter .com for digital identity, fintech, banking, crypto, AI, Web3 and what comes next.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Make an Offer →</a>
+        <a class="btn outline" href="mailto:adam@zelf.com">Email Us</a>
+      </div>
+      <div class="planet">
+        <div class="sun"></div>
+        <div class="planet-line"></div>
+      </div>
+    </section>
+
+    <section class="m-light">
+      <div class="wrap">
+        <p class="section-tag">THE IDEA</p>
+        <h3>From <span>Self</span><br>to <span>Zelf</span>.</h3>
+        <p class="copy">The self once meant your physical identity. In the digital era, identity, money, data, assets and AI increasingly live online.</p>
+
+        <div class="evolution-stack">
+          <div class="identity-card">
+            <small>PHYSICAL WORLD</small>
+            <strong>Self</strong>
+            <p>Who you are</p>
+          </div>
+          <div class="down-arrow">↓</div>
+          <div class="identity-card active">
+            <small>DIGITAL WORLD</small>
+            <strong>Zelf</strong>
+            <p>Your digital self</p>
+          </div>
+        </div>
+
+        <div class="mini-grid">
+          <div><b>◎</b><span>Identity</span></div>
+          <div><b>▣</b><span>Wallet</span></div>
+          <div><b>◉</b><span>Money</span></div>
+          <div><b>◇</b><span>Assets</span></div>
+          <div><b>▤</b><span>Data</span></div>
+          <div><b>✦</b><span>AI</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="m-dark">
+      <div class="wrap">
+        <p class="section-tag blue">BUILT FOR WHAT'S NEXT</p>
+        <h3>One name.<br>Many futures.</h3>
+
+        <div class="industry-list">
+          <article><div class="round">◉</div><div><h4>Digital Identity</h4><p>Authentication, identity and personal data.</p></div></article>
+          <article><div class="round">◇</div><div><h4>Crypto & Web3</h4><p>Wallets, exchanges, DeFi and digital assets.</p></div></article>
+          <article><div class="round">▣</div><div><h4>Banking & Payments</h4><p>Modern finance and payment infrastructure.</p></div></article>
+          <article><div class="round">✦</div><div><h4>AI & Personal Assistant</h4><p>Your intelligence layer for digital life.</p></div></article>
+          <article><div class="round">∞</div><div><h4>And Beyond</h4><p>A brand for categories not yet invented.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="m-light">
+      <div class="wrap">
+        <p class="section-tag">WHY ZELF.COM</p>
+        <h3>Short.<br>Global.<br><span>Memorable.</span></h3>
+
+        <div class="reason-grid">
+          <article><strong>4</strong><span>letters</span></article>
+          <article><strong>.COM</strong><span>global standard</span></article>
+          <article><strong>∞</strong><span>possibilities</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="m-offer" id="contact">
+      <div class="wrap">
+        <p class="section-tag blue">PRIVATE ACQUISITION</p>
+        <h3>Make an <span>Offer</span></h3>
+        <p>Serious acquisition inquiries are welcome.</p>
+
+        <form class="inquiry-form" action="https://formspree.io/f/xoevdrbw" method="POST">
+          <label>Your name<input type="text" name="name" required></label>
+          <label>Your email<input type="email" name="email" required></label>
+          <label>Company <small>optional</small><input type="text" name="company"></label>
+          <label>Your offer (USD) <small>optional</small><input type="text" name="offer"></label>
+          <label>Message <small>optional</small><textarea name="message" rows="5"></textarea></label>
+          <input type="hidden" name="_subject" value="New Zelf.com Mobile Acquisition Inquiry">
+          <button class="submit" type="submit">Send Inquiry →</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="privacy">🔒 Your information is kept confidential.</p>
+        <a class="direct" href="mailto:adam@zelf.com">Or email us directly →</a>
+      </div>
+    </section>
+
+    <section class="m-process">
+      <div class="wrap">
+        <p class="section-tag">ACQUISITION</p>
+        <h3>Simple & secure.</h3>
+        <div class="steps">
+          <div><b>1</b><span><strong>Make an Offer</strong><small>Send your inquiry.</small></span></div>
+          <div><b>2</b><span><strong>Discuss Terms</strong><small>Agree on price and details.</small></span></div>
+          <div><b>3</b><span><strong>Close via Escrow</strong><small>Complete securely through Escrow.com.</small></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="m-footer">
+    <div class="logo">Zelf<span>.com</span></div>
+    <p>Your digital self starts here.</p>
+    <a href="index.html?desktop=1">View desktop site</a>
+    <small>© 2026 Zelf.com</small>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.inquiry-form').forEach((form) => {
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const button = form.querySelector('button[type="submit"]');
+        const status = form.querySelector('.form-status');
+        const originalText = button.textContent;
+        button.disabled = true;
+        button.textContent = 'Sending…';
+        status.textContent = '';
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            window.location.href = 'success.html';
+            return;
+          }
+          status.textContent = 'We could not send your inquiry. Please try again or email adam@zelf.com.';
+        } catch (error) {
+          status.textContent = 'Connection error. Please try again or email adam@zelf.com.';
+        } finally {
+          button.disabled = false;
+          button.textContent = originalText;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
